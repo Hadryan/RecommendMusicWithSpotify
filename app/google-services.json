@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "671571328560",
+    "project_id": "recommendmusicwithspotify",
+    "storage_bucket": "recommendmusicwithspotify.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:671571328560:android:e1d75abeea3e8158c237f5",
+        "android_client_info": {
+          "package_name": "jp.matsumura.kenta.recommendmusicwithspotify"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "671571328560-kq2d3qavdaoooqai5tf15ji5v98jlm5f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDKX8mX-NZszjBSixSqoNyy0YZhc5LJxZw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "671571328560-kq2d3qavdaoooqai5tf15ji5v98jlm5f.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
