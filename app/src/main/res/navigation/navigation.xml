@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigetion"
+    app:startDestination="@id/loginSpotifyFragment">
+
+    <fragment
+        android:id="@+id/loginSpotifyFragment"
+        android:name="jp.matsumura.kenta.recommendmusicwithspotify.LoginSpotifyFragment"
+        android:label="fragment_login_spotify"
+        tools:layout="@layout/fragment_login_spotify" />
+</navigation>
