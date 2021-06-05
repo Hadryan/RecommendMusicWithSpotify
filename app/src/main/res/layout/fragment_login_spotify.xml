@@ -5,10 +5,71 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context="jp.matsumura.kenta.recommendmusicwithspotify.LoginSpotifyFragment">
 
-    <TextView
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/loginConstraint"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_gravity="center"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/loginTitleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="128dp"
+            android:text="@string/login_page_title"
+            android:textSize="30sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/loginEmailText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="@string/login_email"
+            app:layout_constraintStart_toStartOf="@+id/loginTitleText"
+            app:layout_constraintTop_toBottomOf="@+id/loginTitleText" />
+
+        <EditText
+            android:id="@+id/loginEmailEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:importantForAutofill="no"
+            android:inputType="textEmailAddress"
+            app:layout_constraintStart_toStartOf="@+id/loginTitleText"
+            app:layout_constraintTop_toBottomOf="@+id/loginEmailText" />
+
+        <TextView
+            android:id="@+id/loginPasswordText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="@string/login_password"
+            app:layout_constraintStart_toStartOf="@+id/loginTitleText"
+            app:layout_constraintTop_toBottomOf="@+id/loginEmailEditText" />
+
+        <EditText
+            android:id="@+id/loginPasswordEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:importantForAutofill="no"
+            android:inputType="textPassword"
+            app:layout_constraintStart_toStartOf="@+id/loginTitleText"
+            app:layout_constraintTop_toBottomOf="@+id/loginPasswordText" />
+
+        <Button
+            android:id="@+id/loginButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="@string/login_button_text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/loginPasswordEditText" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </layout>
